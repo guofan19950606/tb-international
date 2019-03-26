@@ -37,7 +37,7 @@ $(function(){
 $(function(){
   $(".grail").scroll(function(event){
       let temp=$(".grail").scrollTop();
-      console.log(temp);
+
       if(Math.ceil(temp)>0){
           $(".tb-international-header").css({"background":"white","transition":"all 1s"});
           $(".tmgjicon i").css({"color":"#8146EC"});
@@ -53,9 +53,19 @@ $(function(){
 });
 $(function(){
   $(".tb-international-footer a").click(function(){
-    if (event.currentTarget==this) {
+    if (event.currentTarget==this){
       $(".tb-international-footer a").css({"color":"black"});
       $(this).css({"color":"#8146ec"});
     }
   })
 })
+$(function(){
+  $(".grail").scroll(function(event){
+      let temp=$(".grail").scrollTop();
+      if(Math.ceil(temp)>490){
+         $(".scroller").css({"opacity":"1","transition":"all 1s"});
+      }else{
+        $(".scroller").css({"opacity":"0","transition":"all 1s"});
+      }
+  });
+});
