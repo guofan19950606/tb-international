@@ -621,6 +621,25 @@ span{
 .price {
     text-decoration: line-through;
 }
+/* Big recommended */
+.Bigrecommended{
+    height: 4.2rem;
+    padding:.15rem 0 .12rem 0;
+}
+.clip-content{
+    height: 100%;
+    background: white;
+}
+.clip-contentone{
+    height:69.5%;;
+    background: url(../img/Bigrecommended.webp) no-repeat;
+    background-size: 100%;
+}
+.clip-contenttwo{
+    height: 18.2222%;
+    background: url(../img/bottom.webp) no-repeat;
+    background-size: 100%;
+}
 /* footer */
 .tb-international-footer{
     position: relative;
