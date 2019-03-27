@@ -69,3 +69,30 @@ $(function(){
       }
   });
 });
+$(function(){
+  $(".h2-tabs a").click(function(){
+    if (event.currentTarget==this){
+      $(".h2-tabs a").css({"color":"black"});
+      $(".h2-tabs a .unselected").css({"display":"block"});
+      $(".h2-tabs a .selected").css({"display":"none"});
+      $(this).css({"color":"#8146ec"});
+      $(this).find(".unselected").css({"display":"none"});
+      $(this).find(".selected").css({"display":"block"});
+    }
+  })
+})
+$(function(){
+  $(".h2-tabs a:nth-of-type(1)").click(function(){
+      $(".temp").css({"transform":"translate3d(16px, 0px, 0px) scale(1)","transition":"all 1s"});
+  })
+})
+$(function(){
+  $(".h2-tabs a:nth-of-type(2)").click(function(){
+      $(".temp").css({"transform":"translate3d(141px, 0px, 0px) scale(1)","transition":"all 1s"});
+  })
+})
+$(function(){
+  $(".h2-tabs a:nth-of-type(3)").click(function(){
+      $(".temp").css({"transform":"translate3d(263px, 0px, 0px) scale(1)","transition":"all 1s"});
+  })
+})
