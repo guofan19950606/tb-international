@@ -11,8 +11,8 @@ html,body{
 }
 body{
 	font-family: "微软雅黑",Arial;
-	/* display: flex;
-	flex-direction: column; */
+	display: flex;
+	flex-direction: column;
 }
 ul,ol{
 	list-style:none;
@@ -35,10 +35,7 @@ i{
 span{
     font-size: 12px;
 }
-/* header */
-.mui-slider{
-    position: relative;
-}
+/* nav */
 .mui-flex{
     width: 100%;
     height: .44rem;
@@ -47,6 +44,7 @@ span{
     top: 0;
     display: flex;
     z-index: 100;
+    justify-content: space-between;
 }
 .left-btns {
     padding: 7px 0 7px 10px;
@@ -112,7 +110,7 @@ span{
     border-color: #ff0036;
 }
 .right-btns {
-    padding: 8px 0 8px 4px;
+    padding: 8px 8px 8px 4px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -128,6 +126,16 @@ span{
     align-items: center;
     justify-content: center;
 }
+/* grail */
+.grail{
+    flex: 1;
+    overflow-y: auto;
+}
+/* header */
+.mui-slider{
+    position: relative;
+}
+
 .swiper-container {
     width: 100%;
     height: 100%;
@@ -306,6 +314,7 @@ span{
     position: relative;
     padding: 0.1rem 0.1rem 0 0.1rem;
     background-color: #FFF;
+    margin-bottom: .1rem;
 }
 .logistics .ls {
     float: left;
@@ -316,7 +325,7 @@ span{
 }
 .logistics .r {
     margin-left: 30px;
-    margin-right: 24px;
+    margin-right: 54px;
 }
 .cainiao-wrap {
     background: #fff;
@@ -371,7 +380,7 @@ span{
 .temps{
     display: block;
     position: absolute;
-    left: 57%;
+    left: 42%;
     top: 50%;
     margin-top: -2px;
     height: 4px;
@@ -381,6 +390,166 @@ span{
 .selected{
     background: #7a45e5;
 }
-/* .two{
-    left: 69%; 
-} */
+.tariff {
+    padding: 12px 0;
+    position: relative;
+    background: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.bigbox{
+    display: flex;
+}
+
+.tariff .le {
+    width: 30px;
+    height: auto;
+    color: #999;
+}
+.tariff .rs {
+    margin-right: 24px;
+    color: #333;
+}
+.icon-one{
+    display: inline;
+}
+.icon-one i{
+    transform: rotate(180deg);
+}
+/* service */
+.group-warp{
+    margin-bottom:.1rem;
+    background: #FFF;
+}
+.logo{
+    background: white;
+}
+.logo img {
+    height: .2rem;
+    padding: 10px 0 5px 10px;
+}
+.module-scene-item {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.bigbox>.lt {
+    float: left;
+    width: 0.3rem;
+    height: auto;
+    color: #999;
+    font-size: 12px;
+}
+.bigbox>.rt {
+    margin-right: 24px;
+    font-size: 12px;
+}
+.server-list{
+    position: relative;
+    padding-right: 20px;
+    color: #333;
+    display: flex;
+}
+.server-list li:first-child{
+    padding: 0;
+}
+.server-list li{
+    padding-left: .2rem;  
+}
+/* select */
+.select{
+    background-color: #FFF;
+    padding: 12px 10px;
+    color: #051b28;
+    position: relative;
+    line-height: 18px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.le{
+    width: 30px;
+    height: auto;
+    color: #999;
+}
+.bigbox .ls{
+    font-size: 12px;
+}
+.props-content {
+    background-color: #FFF;
+    padding: 12px 10px;
+    color: #051b28;
+    position: relative;
+    line-height: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.props-content>.r {
+    margin-left: 30px;
+    margin-right: 24px;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+}
+/* footer */
+.footer{
+    height: .5rem;
+    background: #FFF;
+    display: flex;
+}
+.cell {
+    display: block;
+    box-sizing: border-box;
+
+    min-width: 26px;
+    flex: 1;
+    height: 50px;
+    color: #999;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+}
+.cell.toshop {
+    max-width: .5rem;
+    min-width: 13%;
+    padding-top: 4px;
+}
+.cell.toshop i{
+    font-size: .22rem;
+    font-weight: 900;
+}
+.bt-icon{
+   color: blue;
+}
+.trade {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: flex;
+    text-align: center;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.trade .cart{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    color: #fff;
+    background-color: #FF9500;
+    font-size: .15rem;
+    line-height: .5rem;
+}
+.buy{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    color: #fff;
+    background-color: #FF0036;
+    font-size: .15rem;
+    line-height: .5rem;
+}

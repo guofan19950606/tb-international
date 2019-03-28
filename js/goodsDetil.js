@@ -23,3 +23,20 @@ var mySwiper = new Swiper ('.swiper-container', {
       el: '.swiper-scrollbar',
     },
   })
+  $(function(){
+    $(".grail").scroll(function(event){
+        let temp=$(".grail").scrollTop();
+      console.log(temp);
+        if(Math.ceil(temp)>44){
+            $(".mui-flex").css({"background":"white"});
+            $(".header-nav").css({"opacity":"1"});
+            $(".icon-link").css({"background":"none"});
+            $(".icon-link i").css({"color":"#999"});
+        }else{
+          $(".mui-flex").css({"background":""});
+          $(".header-nav").css({"opacity":"0"});
+          $(".icon-link").css({"background":"rgba(0,0,0,.4)"});
+          $(".icon-link i").css({"color":"white"});
+        }
+    });
+  });
