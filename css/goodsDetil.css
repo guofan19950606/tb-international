@@ -130,6 +130,7 @@ span{
 .grail{
     flex: 1;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 /* header */
 .mui-slider{
@@ -770,6 +771,7 @@ span{
     font-weight: 400;
 }
 /* bannerList */
+
 .title {
     display: block;
     padding: 10px;

@@ -1,0 +1,265 @@
+@charset "utf-8";
+/* CSS Document */
+body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td{
+	margin:0;
+	padding:0;
+	
+}
+html,body{
+    height: 100%;
+    background: #f5f5f5;
+}
+body{
+	font-family: "微软雅黑",Arial;
+	/* display: flex;
+	flex-direction: column; */
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border: 0;
+	display: block;
+}
+a{	
+    text-decoration:none;
+    display: block;
+}
+html{
+	font-size: 26.67vw;
+}
+i{
+    display: block;
+}
+span{
+    font-size: 12px;
+}
+main{
+    overflow-y: scroll;
+    background: #f5f5f5;
+}
+/* header */
+.tb-shoppingcars-header{
+    height: .3rem;
+    background: url(../img/header.webp) no-repeat;
+    background-size: 100%;
+}
+.tb-shoppingcars-contents{
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+    -webkit-flex-basis: auto;
+    flex-basis: auto;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    border: 0 solid black;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    margin-top: -0.075rem;
+}
+.tb-shoppingcars-contents .tb-shoppingcars-ct:last-of-type{
+    margin-bottom: 0.5rem;
+}
+.tb-shoppingcars-ct{
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+    -webkit-flex-basis: auto;
+    flex-basis: auto;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    border: 0 solid black;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    margin-bottom: 0.1rem;
+    background: white;
+}
+.tb-shoppingcars-title{
+    display: flex;
+    padding: 0.1rem 0rem;
+    margin-top: 0.075rem;
+}
+.tb-shoppingcars-select{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 0.43rem;
+    height: 100%;
+    align-items: center;
+   
+}
+.tb-shoppingcars-select img{
+    width: 0.2rem;
+    height: 0.2rem;
+}
+.tb-shoppingcars-store{
+    padding-right: 0.1rem;
+    display: flex;
+    width: 3.27rem;
+    align-items: center;
+}
+.tb-shoppingcars-store img{
+    width:0.18rem;
+    height: 0.18rem;
+    margin-right: 5px;
+}
+.tb-shoppingcars-store a {
+    display: flex;
+}
+.tb-shoppingcars-store p{
+    font-size: 12px;
+    color: #333;
+}
+.tb-shoppingcars-store a p{
+    font-size: 0.14rem;
+}
+.binaji{
+    position: absolute;
+    right: 0;
+    padding-right: 0.1rem;
+}
+.tb-shoppingcars-list{
+    display: flex;
+    height: 1.25rem;
+}
+.tb-shoppingcars-list-ct{
+    -webkit-box-flex: 1;
+    flex: 1 1 0%;
+    padding-top: 0.1rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    min-width: 0px;
+    flex-direction: row;
+    align-content: center;
+    display: flex;
+}
+.img-one{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.img-one img{
+    width: 0.9rem;
+    height: 0.9rem;
+}
+.tb-shoppingcars-list-item{
+    -webkit-box-flex: 1;
+    flex: 1 1 0%;
+    padding-left: 0.12rem;
+    padding-right: 0.12rem;
+    padding-bottom: 0.06rem;
+    padding-top: .1rem;
+}
+.tb-shoppingcars-list-itemone{
+    position: relative;
+    height:0.33rem;
+    align-items: flex-start;
+    align-self: flex-start;
+    padding-right: 0.1rem;    
+    padding-top: 0.1rem;
+}
+.tb-shoppingcars-list-itemone{
+    align-items: flex-start;
+    -webkit-box-flex: 1;
+
+}
+.tb-shoppingcars-pone{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    font-size: 24px;
+    line-height: 30px;
+    color: rgb(51, 51, 51);
+    font-size: 0.14rem;
+    line-height: normal;
+}
+.tb-shoppingcars-ptwo{
+    font-size: 0.12rem;
+    color: rgb(153, 153, 153);
+    margin-top: 0.04rem;
+}
+.tb-shoppingcars-pthree{
+    margin-top: 5px;
+    font-size: 0.12rem;
+    margin-right: 0.06rem;
+    color: rgb(245, 172, 71);
+}
+.tb-shoppingcars-pfour{
+    margin-top: 5px;
+    font-size: 0.12rem;
+    margin-right: 0.06rem;
+    color: rgb(255, 80, 0);
+}
+.tb-shoppingcars-list-itemone-samll p{
+    font-size: .14rem;
+    color: red;
+}
+.jianshu{
+    color: black !important;
+    text-align: end;
+}
+/* footer */
+.tb-shoppingcars-footer{
+    height: 0.5rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: white;
+    display: flex;
+    align-items: center;
+    font-size: .12rem;
+}
+.tb-shoppingcars-footer-pay{
+    width: 1.8rem;
+    text-align: end;
+    margin-right: 0.24rem;
+}
+.tb-shoppingcars-footer-pay-p{
+    color: red; 
+}
+.tb-shoppingcars-footer-pay-btn{
+   width: 1.04rem;
+   height: 100%;
+   background: blueviolet;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.tb-shoppingcars-footer-pay-btn p{
+    font-size: 0.16rem;
+    color: white;
+}
